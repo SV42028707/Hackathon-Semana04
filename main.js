@@ -63,5 +63,26 @@ EJERCICIO #06
 
 
 EJERCICIO #07
+const printNumbers = function (from, to) {
+  setInterval(() => {
+  if (from > to) {
+    return
+  }
+  console.log(from++)
+  }, 1000)
+}
 
+printNumbers(2, 8)
+
+
+const printNumbers2 = function (beg, end) {
+  setTimeout(() => {
+    console.log(beg++)
+    if (beg < end) {
+    printNumbers2(beg, end)
+  }
+  }, 1000)
+}
+
+printNumbers2(2, 8)
 */
