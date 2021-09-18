@@ -45,4 +45,23 @@ loadJson("no-such-user.json").catch(alert);
 
 
 EJERCICIO #04
+
+
+EJERCICIO #05
+async function wait() {
+await new Promise(resolve => setTimeout(resolve, 1000)); return 10;
+} 
+
+function f() {
+  wait().then(console.log)
+}
+
+f()
+
+EJERCICIO #06
+//Sí, se activará el catch ya que cualquier error que haya en una promesa, el catch lo agarra.
+
+
+EJERCICIO #07
+
 */
